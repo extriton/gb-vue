@@ -1,28 +1,31 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <DiceGame />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import DiceGame from '@/components/dice/DiceGame.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    DiceGame,
   }
 }
 </script>
 
 <style lang="scss">
+* {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+body {
+  margin: 0;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 </style>
